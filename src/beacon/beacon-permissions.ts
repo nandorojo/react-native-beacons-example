@@ -2,6 +2,7 @@ import { DeviceEventEmitter } from "react-native";
 import Beacons from "react-native-beacons-manager";
 
 export const requestPermissions = () => {
+	console.log('will request', Beacons)
   // @ts-ignore
   Beacons.requestAlwaysAuthorization();
 
@@ -10,7 +11,7 @@ export const requestPermissions = () => {
   // (minor and major properties are numbers)
   const region = {
     identifier: "Estimotes",
-    uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"
+    uuid: "426C7565-4368-6172-6D42-6561636F6E73"
   };
 
   // Request for authorization while the app is open
