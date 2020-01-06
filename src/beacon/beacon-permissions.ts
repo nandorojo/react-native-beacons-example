@@ -3,7 +3,6 @@ import Beacons from "react-native-beacons-manager";
 
 export const requestPermissions = () => {
 	console.log('will request', Beacons)
-  // @ts-ignore
   Beacons.requestAlwaysAuthorization();
 
   // Define a region which can be identifier + uuid,
